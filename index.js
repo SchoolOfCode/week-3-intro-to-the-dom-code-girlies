@@ -56,3 +56,36 @@ console.log(document.querySelectorAll(".highlight"));
 // `id` of "itemList" and all of its `<li>` children.
 
 console.log(document.querySelector("#itemList > li").parentNode);
+
+
+// Ticket 2b Instructions:
+// Select the <ul> element with the id of "itemList".
+// Use the childNodes property to get all its child nodes.
+// Log the child nodes to the console.
+// Expected Outcome:
+// The console should display a collection (NodeList) of child nodes of the <ul> element, which includes the <li> elements as well as any whitespace or line breaks.
+
+
+console.log(document.querySelector("#itemList").childNodes);
+
+
+// Ticket 2c Instructions:
+// Select the <ul> element with the id of "itemList".
+// Use the children property to get all its element children.
+// Log the element children to the console.
+// Expected Outcome:
+// The console should display a HTMLCollection of five <li> elements.
+
+console.log(document.querySelector("#itemList").children);
+
+
+// Ticket 2d: First and Last Child
+// Instructions:
+// Select the <ul> element with the id of "itemList".
+// Use the firstChild and lastChild properties to get the first and last child nodes.
+// Log both child nodes to the console.
+// Expected Outcome:
+// The console should display two nodes. Depending on the formatting of your HTML, the first may be a text node (whitespace or line break). The last should be the <li> element with the content "🍈 Fig".
+
+console.log(document.querySelector("#itemList").firstElementChild);
+console.log(document.querySelector("#itemList").lastElementChild);
